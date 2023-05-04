@@ -5,40 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header id="header">
-      <img
-        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-        alt=""
-        id="header-img"
-      />
+      <img src="Logo.png" alt="" id="header-img" />
+
       <nav id="nav-bar">
-        <ul>
-          <li><a class="nav-link" href="">Features</a></li>
-          <li><a class="nav-link" href="">How It Works</a></li>
-          <li><a class="nav-link" href="">Pricing</a></li>
+        <ul class="f-right">
+          <li>
+            <a class="nav-link" href=""
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </li>
+          <li>
+            <a class="nav-link" href=""
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+          <li>
+            <a class="nav-link" href=""><i class="fa-regular fa-user"></i></a>
+          </li>
+        </ul>
+        <ul class="f-left">
+          <li><a class="nav-link" href="">home</a></li>
+          <li><a class="nav-link" href="">about us</a></li>
+          <li><a class="nav-link" href="">products</a></li>
+          <li><a class="nav-link" href="">faqs</a></li>
+          <li><a class="nav-link" href="">contact us</a></li>
         </ul>
       </nav>
     </header>
-    <h2>Handcrafted, home-made masterpieces</h2>
-    <form action="https://www.freecodecamp.com/email-submit" id="form">
-      <input
-        type="text"
-        id="email"
-        name="email"
-        pattern="[^ @]*@[^ @]*"
-        placeholder="Enter your email"
-        required
-      />
-      <input id="submit" type="submit" />
-    </form>
-    <iframe
-      id="video"
-      height="315"
-      src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
+    <section id="cover"></section>
+    <section id="products"></section>
+    <section id="clients_say"></section>
+    <section id="signup_form">
+      <h2>Handcrafted, home-made masterpieces</h2>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input
+          type="text"
+          id="email"
+          name="email"
+          pattern="[^ @]*@[^ @]*"
+          placeholder="Enter your email"
+          required
+        />
+        <input id="submit" type="submit" />
+      </form>
+    </section>
+    <section id="video_sec">
+      <iframe
+        id="video"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <footer></footer>
   </body>
 </html>
