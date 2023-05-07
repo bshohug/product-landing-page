@@ -7,7 +7,7 @@
   --quote-box: rgb(250, 250, 250);
   --on-background: rgb(66, 66, 66);
   --on-background-alt: rgba(66, 66, 66, 0.7);
-  --background: rgb(255, 255, 255);
+  --background: #fbfbfb;
   --card-color: rgba(139, 100, 100, 0.5);
 }
 
@@ -296,16 +296,24 @@ header img {
 
 /* product page */
 
+#products {
+  margin-top: 15vh;
+}
+
 .products-menu {
   width: 120vh;
-  margin: 10px;
+  margin: 0 0 10vh 0;
+}
+
+.categories {
+  margin-bottom: 5vh;
 }
 
 .products-menu h3 {
   font-family: 'Geomanist';
   font-weight: bold;
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 5vh;
+  line-height: 5vh;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #3d3d3f;
@@ -315,8 +323,8 @@ header img {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
-  font-size: 23px;
-  line-height: 23px;
+  font-size: 2.3vh;
+  line-height: 2.3vh;
   color: #a9a7a6;
   padding: 0 60px;
 }
@@ -324,8 +332,8 @@ header img {
 .see-all a {
   text-decoration: none;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 17px;
+  font-size: 1.7vh;
+  line-height: 1.7vh;
   color: #3d3d3f;
 }
 
@@ -345,8 +353,8 @@ header img {
   padding: 20px;
   text-decoration: none;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 1.8vh;
+  line-height: 1.8vh;
   color: #a9a7a6;
 }
 .categories a:nth-child(4) {
@@ -356,8 +364,8 @@ header img {
 .product-card {
   background: #fff4e8;
   border-radius: 3px;
-  width: 312px;
-  height: 305px;
+  width: 31.2vh;
+  height: 30.5vh;
   margin: 5vh 5vh 10vh 5vh;
 }
 .btn-div {
@@ -371,11 +379,11 @@ header img {
   border: 1px solid #d9ab82;
   border-radius: 20px;
   color: #ffffff;
-  width: 137px;
-  height: 40px;
+  width: 15vh;
+  height: 4vh;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 1.4vh;
+  line-height: 1.4vh;
 }
 
 .product-card button i {
@@ -392,8 +400,8 @@ header img {
 
 .product-card h4 {
   font-weight: 700;
-  font-size: 26px;
-  line-height: 26px;
+  font-size: 2.6vh;
+  line-height: 2.6vh;
   color: #3d3d3f;
   margin-bottom: 0;
   margin: 15px 0;
@@ -406,25 +414,82 @@ header img {
 }
 .pricing p:nth-child(1) {
   font-weight: 500;
-  font-size: 19px;
-  line-height: 19px;
+  font-size: 1.9vh;
+  line-height: 1.9vh;
   color: #3d3d3f;
 }
 .pricing p:nth-child(2) {
   font-weight: 500;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: 1.5vh;
+  line-height: 1.5vh;
   text-decoration-line: line-through;
   color: #a9a7a6;
 }
 
 .product-card img {
-  transform: translateY(-15%);
-  width: 448px;
-  height: 384px;
+  transform: translateY(-10%);
+  width: 25vh;
+  height: 30vh;
+}
+
+/* Client Feedback */
+#review-page {
+  /* width: 100vh; */
+}
+.review-image {
+  width: 47.7vh;
+  height: 61.5vh;
+}
+.review-side {
+}
+.review-text h1 {
+  width: 42.7vh;
+  height: 11.2vh;
+  font-weight: 700;
+  font-size: 5.3vh;
+  line-height: 5.6vh;
+  color: #3d3d3f;
+}
+.review-text p {
+  width: 44.5vh;
+  height: 14vh;
+  font-weight: 400;
+  font-size: 1.8vh;
+  line-height: 2.8vh;
+  color: #72696a;
+  margin: 30px;
+}
+.review-by {
+  margin: 30px;
+}
+.review-by h6 {
+  width: 10.4vh;
+  height: 2vh;
+  font-weight: 400;
+  font-size: 2vh;
+  line-height: 2vh;
+  color: #3d3d3f;
+}
+
+.ratings p {
+  width: 10.1vh;
+  height: 1.4vh;
+  font-weight: 400;
+  font-size: 1.4vh;
+  line-height: 1.4vh;
+  color: #a9a7a6;
+  margin: 20px 20px 40px 0;
+}
+
+.ratings p:nth-child(2) {
+  color: #3d3d3f;
 }
 @media screen and (max-width: 1000px) {
   #nav-bar {
     font-size: 0.9rem;
+  }
+  .products-menu {
+    width: 80vh;
+    margin: 0 0 10vh 0;
   }
 }
