@@ -219,7 +219,7 @@ header img {
   /* border: 5px solid var(--on-background-alt); */
   /* outline: 1px solid var(--on-background-alt); */
   /* border-radius: 50%; */
-  width: 112%;
+
   margin: auto;
   height: auto;
   display: block;
@@ -433,7 +433,7 @@ header img {
 }
 
 /* Client Feedback */
-#review-page {
+#faqs {
   margin-top: 15vh;
 }
 .review-left {
@@ -529,14 +529,92 @@ header img {
 }
 
 /*   Form  */
+
+#signup_form {
+  margin-top: 15vh;
+  background-color: #ffffff;
+  padding: 20vh;
+}
+
 .form-left {
-  width: 80vh;
+  width: 100vh;
+  height: 58.8vh;
 }
-
 .form-right {
-  width: 20vh;
+  height: 45vh;
 }
 
+.input-form {
+  width: 50%;
+}
+.form-video {
+  width: 44.5vh;
+  height: 7.3vh;
+  margin-left: 5vh;
+}
+.form-left .form-top {
+  border: 1px solid #fe8432;
+  border-radius: 20px;
+  width: 18.3vh;
+  height: 3.6vh;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4vh;
+  line-height: 2vh;
+  letter-spacing: -0.5px;
+  color: #fe8432;
+}
+.form-left h6 {
+  margin: 0;
+}
+.form-left .form-top:hover {
+  background: #fe8432;
+  color: #e9e9e9;
+}
+
+.form-left h2 {
+  font-weight: 700;
+  font-size: 5.3vh;
+  line-height: 5.5vh;
+  color: #3d3d3f;
+  text-align: start;
+}
+.input-form input:nth-child(1) {
+  width: 80vh;
+  height: 7.3vh;
+  background: #f5f5f5;
+  border: 0;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.01);
+  border-radius: 5px;
+}
+.input-form input:nth-child(2) {
+  width: 19.7vh;
+  height: 6vh;
+  transform: translate(-105%, 10%);
+  font-weight: 400;
+  font-size: 1.8vh;
+  line-height: 2vh;
+  color: #ffffff;
+  background: #d9ab82;
+  border: 0;
+  box-shadow: 0px 12px 25px rgba(207, 80, 74, 0.1);
+  border-radius: 6px;
+}
+
+.form-video img {
+  /* align-items: center; */
+  margin-top: 4.5vh;
+  width: 15vh;
+}
+.form-video a {
+  font-weight: 400;
+  font-size: 1.5vh;
+  line-height: 2vh;
+  text-decoration-line: underline;
+  color: #2e2e2e;
+  transform: translateX(-27%);
+}
 @media screen and (max-width: 1000px) {
   #nav-bar {
     font-size: 0.9rem;

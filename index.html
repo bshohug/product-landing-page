@@ -20,43 +20,45 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="container">
+  <body class="">
     <header id="header">
       <img src="Logo.png" alt="" id="header-img" />
       <nav id="nav-bar">
         <ul class="f-right">
           <li>
-            <a class="nav-link" href=""
+            <a class="nav-link" href="#home"
               ><i class="fa-solid fa-magnifying-glass"></i
             ></a>
           </li>
           <li>
-            <a class="nav-link" href=""
+            <a class="nav-link" href="#home"
               ><i class="fa-solid fa-cart-shopping"></i
             ></a>
           </li>
           <li>
-            <a class="nav-link" href=""><i class="fa-regular fa-user"></i></a>
+            <a class="nav-link" href="#home"
+              ><i class="fa-regular fa-user"></i
+            ></a>
           </li>
         </ul>
         <ul class="f-left">
-          <li><a class="nav-link" href="">home</a></li>
+          <li><a class="nav-link" href="#home">home</a></li>
           <li>
-            <a class="nav-link" href="">about us</a>
+            <a class="nav-link" href="#about">about us</a>
           </li>
           <li>
-            <a class="nav-link" href="">products</a>
+            <a class="nav-link" href="#products">products</a>
           </li>
-          <li><a class="nav-link" href="">faqs</a></li>
+          <li><a class="nav-link" href="#faqs">faqs</a></li>
           <li>
-            <a class="nav-link" href="">contact us</a>
+            <a class="nav-link" href="#signup_form">contact us</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <!-- Cover Page -->
-    <section id="cover">
+    <section id="home">
       <div class="title-group">
         <div class="content">
           <h1 class="title">Modern Furniture For Modern Living Style</h1>
@@ -74,6 +76,9 @@
           <img id="image" src="Image.jpg" alt="" />
         </figure>
       </div>
+    </section>
+
+    <section id="about">
       <div class="trusted-client">
         <h2>SOME OF OUR TRUSTED CLIENTS</h2>
         <div class="all-logo">
@@ -214,11 +219,11 @@
 
     <!-- Client Feedback -->
     <section
-      id="review-page"
+      id="faqs"
       class="d-flex flex-row justify-content-center align-items-center flex-fill"
     >
       <div class="d-flex flex-column flex-fill review-left">
-        <div class="d-flex flex-fill review-image1">
+        <div class="d-flex flex-fill justify-content-end review-image1">
           <img
             src="pretty-young-woman-pointing-finger-left-smiling-as-inviting-look-copyspace.jpg"
             alt=""
@@ -261,40 +266,58 @@
     </section>
 
     <!-- Form -->
-    <section id="signup_form">
-      <div class="form-left">
-        <h6>Mistrium Interior</h6>
-        <h2>Signup to receive updates about new products</h2>
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-          <div>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              pattern="[^ @]*@[^ @]*"
-              placeholder="Your business email .."
-              required
-            />
-            <input id="submit" value="Get started " type="submit" />
+    <section id="signup_form" class="d-flex">
+      <div class="d-flex flex-row justify-content-center align-items-center">
+        <div class="form-left d-flex flex-column justify-content-center">
+          <div
+            class="form-top d-flex justify-content-center align-items-center"
+          >
+            <h6>Mistrium Interior</h6>
           </div>
-          <div class="">
-            <img src="Group 4216.png" alt="" /> <a href="">Watch intro video</a>
+          <div class="signup-title mt-4">
+            <h2>Signup to receive updates about new products</h2>
           </div>
-        </form>
+          <form
+            action="https://www.freecodecamp.com/email-submit"
+            id="form"
+            class="d-flex flex-row mt-5"
+          >
+            <div class="d-flex input-form">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your business email .."
+                required
+              />
+              <input id="submit" value="Get started " type="submit" />
+            </div>
+            <div class="d-flex form-video align-items-center">
+              <img src="Group 4216.png" alt="" />
+              <a class="" href="">Watch intro video</a>
+            </div>
+          </form>
+        </div>
+        <div class="form-right d-flex align-items-center">
+          <img src="image 269.jpg" alt="" />
+        </div>
       </div>
-      <div class="form-right">
-        <img src="" alt="" />
+      <div id="video_sec" class="mt-5">
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/eTyT2a1X2ak"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
+      <div></div>
     </section>
-    <section id="video_sec">
-      <iframe
-        id="video"
-        height="315"
-        src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-    </section>
+
+    <section id="video_sec"></section>
     <footer></footer>
   </body>
 </html>
