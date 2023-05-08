@@ -213,14 +213,24 @@
     </section>
 
     <!-- Client Feedback -->
-    <section id="review-page" class="d-flex flex-row flex-fill">
-      <div class="d-flex flex-fill review-image">
-        <img
-          src="pretty-young-woman-pointing-finger-left-smiling-as-inviting-look-copyspace.jpg"
-          alt=""
-        />
+    <section
+      id="review-page"
+      class="d-flex flex-row justify-content-center align-items-center flex-fill"
+    >
+      <div class="d-flex flex-column flex-fill review-left">
+        <div class="d-flex flex-fill review-image1">
+          <img
+            src="pretty-young-woman-pointing-finger-left-smiling-as-inviting-look-copyspace.jpg"
+            alt=""
+          />
+        </div>
+        <div class="d-flex review-image2 justify-content-end">
+          <img src="t 3.jpg" alt="" />
+          <img src="t 4.jpg" alt="" />
+          <img src="t 04.jpg" alt="" />
+        </div>
       </div>
-      <div class="d-flex flex-column flex-fill review-side">
+      <div class="d-flex flex-column flex-fill review-right">
         <div class="review-text">
           <h1>Let’s see what our customer’s say</h1>
           <p>
@@ -230,7 +240,7 @@
             dear were. Remarkably to continuing in surrounded diminution on.
           </p>
         </div>
-        <div class="review-by">
+        <div class="d-flex flex-column review-by">
           <h6>Mike Taylor</h6>
           <div class="d-flex flex-row ratings">
             <p>20 January 2020</p>
@@ -242,26 +252,39 @@
               <i class="fa-solid fa-star"></i>
             </p>
           </div>
-          <div>
-            <button><i class="fa-solid fa-circle-arrow-left"></i></button
-            ><button><i class="fa-solid fa-circle-arrow-right"></i></button>
+          <div class="review-btn">
+            <button><i class="fa-solid fa-angle-left"></i></button
+            ><button><i class="fa-solid fa-angle-right"></i></button>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Form -->
     <section id="signup_form">
-      <h2>Handcrafted, home-made masterpieces</h2>
-      <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <input
-          type="text"
-          id="email"
-          name="email"
-          pattern="[^ @]*@[^ @]*"
-          placeholder="Enter your email"
-          required
-        />
-        <input id="submit" type="submit" />
-      </form>
+      <div class="form-left">
+        <h6>Mistrium Interior</h6>
+        <h2>Signup to receive updates about new products</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <div>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              pattern="[^ @]*@[^ @]*"
+              placeholder="Your business email .."
+              required
+            />
+            <input id="submit" value="Get started " type="submit" />
+          </div>
+          <div class="">
+            <img src="Group 4216.png" alt="" /> <a href="">Watch intro video</a>
+          </div>
+        </form>
+      </div>
+      <div class="form-right">
+        <img src="" alt="" />
+      </div>
     </section>
     <section id="video_sec">
       <iframe
