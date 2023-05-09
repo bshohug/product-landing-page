@@ -21,10 +21,31 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="">
-    <header id="header">
-      <img src="Logo.png" alt="" id="header-img" />
-      <nav id="nav-bar">
-        <ul class="f-right">
+    <header id="header" class="d-flex flex-fill">
+      <div class="main-logo d-flex flex-fill">
+        <img src="Logo.png" alt="" id="header-img" />
+      </div>
+
+      <div class="nav-menu d-flex flex-fill justify-content-center">
+        <nav id="nav-bar">
+          <ul class="f-left d-flex">
+            <li><a class="nav-link" href="#home">home</a></li>
+            <li>
+              <a class="nav-link" href="#about">about us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#products">products</a>
+            </li>
+            <li><a class="nav-link" href="#faqs">faqs</a></li>
+            <li>
+              <a class="nav-link" href="#signup_form">contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="right-menu d-flex flex-fill justify-content-end">
+        <ul class="f-right d-flex">
           <li>
             <a class="nav-link" href="#home"
               ><i class="fa-solid fa-magnifying-glass"></i
@@ -41,20 +62,7 @@
             ></a>
           </li>
         </ul>
-        <ul class="f-left">
-          <li><a class="nav-link" href="#home">home</a></li>
-          <li>
-            <a class="nav-link" href="#about">about us</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#products">products</a>
-          </li>
-          <li><a class="nav-link" href="#faqs">faqs</a></li>
-          <li>
-            <a class="nav-link" href="#signup_form">contact us</a>
-          </li>
-        </ul>
-      </nav>
+      </div>
     </header>
 
     <!-- Cover Page -->
@@ -302,7 +310,7 @@
           <img src="image 269.jpg" alt="" />
         </div>
       </div>
-      <div id="video_sec" class="mt-5">
+      <div id="video_sec">
         <iframe
           id="video"
           width="560"
@@ -314,10 +322,36 @@
           allowfullscreen
         ></iframe>
       </div>
-      <div></div>
-    </section>
+      <div class="footer-menu d-flex flex-fill align-items-start">
+        <div class="logo-img d-flex flex-fill">
+          <img src="Logo.png" alt="" />
+        </div>
 
-    <section id="video_sec"></section>
-    <footer></footer>
+        <div class="footer-links d-flex flex-fill justify-content-center">
+          <ul class="d-flex">
+            <li>
+              <a class="footer-nav-link" href="#about">about us</a>
+            </li>
+            <li>
+              <a class="footer-nav-link" href="#products">products</a>
+            </li>
+            <li><a class="footer-nav-link" href="#service">service</a></li>
+            <li>
+              <a class="footer-nav-link" href="#signup_form">contact us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-links d-flex flex-fill justify-content-end">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <footer>
+        <span>made with ❤ by BM Shohug | Design © arshakir.com</span>
+      </footer>
+    </section>
   </body>
 </html>
