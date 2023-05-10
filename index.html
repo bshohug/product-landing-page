@@ -21,70 +21,103 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="">
-    <header id="header" class="d-flex flex-fill">
-      <div class="main-logo d-flex flex-fill">
-        <img src="Logo.png" alt="" id="header-img" />
+    <header id="header" class="navbar">
+      <div class="navbar-brand">
+        <img id="header-img" src="Logo.png" alt="" class="navbar-logo" />
       </div>
 
-      <div class="nav-menu d-flex flex-fill justify-content-center">
-        <nav id="nav-bar">
-          <ul class="f-left d-flex">
-            <li><a class="nav-link" href="#home">home</a></li>
-            <li>
-              <a class="nav-link" href="#about">about us</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#products">products</a>
-            </li>
-            <li><a class="nav-link" href="#faqs">faqs</a></li>
-            <li>
-              <a class="nav-link" href="#signup_form">contact us</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <button id="toggle-sidebar" class="navbar-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-      <div class="right-menu d-flex flex-fill justify-content-end">
-        <ul class="f-right d-flex">
-          <li>
-            <a class="nav-link" href="#home"
-              ><i class="fa-solid fa-magnifying-glass"></i
-            ></a>
-          </li>
-          <li>
-            <a class="nav-link" href="#home"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
-          </li>
-          <li>
-            <a class="nav-link" href="#home"
-              ><i class="fa-regular fa-user"></i
-            ></a>
-          </li>
+      <nav id="nav-bar" class="navbar-menu">
+        <ul class="nav-links">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About Us</a></li>
+          <li><a class="nav-link" href="#products">Products</a></li>
+          <li><a class="nav-link" href="#faqs">FAQs</a></li>
+          <li><a class="nav-link" href="#signup_form">Contact Us</a></li>
         </ul>
+      </nav>
+
+      <div class="navbar-icons">
+        <a class="navbar-icon" href="#search"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
+        <a class="navbar-icon" href="#cart"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
+        <a class="navbar-icon" href="#profile"
+          ><i class="fa-regular fa-user"></i
+        ></a>
+      </div>
+      <div id="sidebar" class="sidebar">
+        <ul class="sidebar-links">
+          <li><a class="sidebar-link" href="#home">Home</a></li>
+          <li><a class="sidebar-link" href="#about">About Us</a></li>
+          <li><a class="sidebar-link" href="#products">Products</a></li>
+          <li><a class="sidebar-link" href="#faqs">FAQs</a></li>
+          <li><a class="sidebar-link" href="#signup_form">Contact Us</a></li>
+        </ul>
+        <div class="sidebar-icons">
+          <a class="sidebar-icon" href="#search"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <a class="sidebar-icon" href="#cart"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a class="sidebar-icon" href="#profile"
+            ><i class="fa-regular fa-user"></i
+          ></a>
+        </div>
       </div>
     </header>
 
     <!-- Cover Page -->
-    <section id="home">
-      <div class="title-group">
-        <div class="content">
-          <h1 class="title">Modern Furniture For Modern Living Style</h1>
-          <p></p>
-          <div class="btnnn">
-            <button class="btn1" role="button" type="button">
+    <section id="home" class="d-flex flex-row flex-fill">
+      <div class="title d-flex flex-column flex-fill">
+        <div class="img-btn d-flex">
+          <h1 class="mb-0">Modern Furniture For Modern Living Style</h1>
+        </div>
+        <div class="p-btn d-flex flex-column">
+          <div class="d-flex flex-column paragraph">
+            <p class="mb-3">
+              In unfeeling existence objection immediate repulsive on he in.
+              Imprudence comparison uncommonly me he difficulty diminution
+              resolution. Likewise proposal differed scarcely dwelling as on
+              raillery.
+            </p>
+            <p class="mb-3">
+              September few dependent extremity own continued and ten prevailed
+              attending. Early to weeks we could. Do commanded an shameless we
+              disposing do. Indulgence ten remarkably nor are impression out.
+              Power is lived means oh every in we quiet.
+            </p>
+          </div>
+          <div class="btnnn d-flex flex-column flex-md-row">
+            <button
+              class="btn btn-primary btn1 mb-3 mb-md-0 me-md-3"
+              role="button"
+              type="button"
+            >
               Request a Quote
             </button>
-            <button class="btn2" role="button" type="button">
+            <button
+              class="btn btn-outline-primary btn2"
+              role="button"
+              type="button"
+            >
               Watch Video
             </button>
           </div>
         </div>
-        <figure id="img-div">
-          <img id="image" src="Image.jpg" alt="" />
-        </figure>
+      </div>
+      <div class="cover-img d-flex flex-fill">
+        <img id="image" class="img-fluid w-100" src="Image.jpg" alt="" />
       </div>
     </section>
+
+    <!-- Clients page -->
 
     <section id="about">
       <div class="trusted-client">
@@ -350,8 +383,36 @@
       </div>
 
       <footer>
-        <span>made with ❤ by BM Shohug | Design © arshakir.com</span>
+        <span
+          >made with ❤ by
+          <a class="bshohug" href="https://github.com/bshohug">bshohug</a> |
+          design © arshakir.com</span
+        >
       </footer>
     </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 50) {
+          $('.navbar').addClass('shadow');
+        } else {
+          $('.navbar').removeClass('shadow');
+        }
+      });
+    </script>
+    <script>
+      const toggleSidebarBtn = document.getElementById('toggle-sidebar');
+      const sidebar = document.getElementById('sidebar');
+
+      toggleSidebarBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('show');
+      });
+    </script>
   </body>
 </html>
