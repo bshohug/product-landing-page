@@ -97,7 +97,7 @@ h3 {
 }
 
 .nav-link:hover {
-  color: #f00;
+  color: #c4a586;
 }
 
 .navbar-icons {
@@ -115,7 +115,7 @@ h3 {
 }
 
 .navbar-icon:hover {
-  color: #f00;
+  color: #c4a586;
 }
 
 /* sidebar */
@@ -229,6 +229,9 @@ h3 {
 
 .btnnn button:focus {
   outline: 0 solid transparent;
+  border-color: #c4a586;
+  box-shadow: inset 0 1px 1px rgba(114, 114, 114, 0.075),
+    0 0 8px rgba(255, 165, 91, 0.6);
 }
 
 .btnnn button:focus:before {
@@ -647,7 +650,16 @@ h3 {
   box-shadow: 0px 12px 25px rgba(207, 80, 74, 0.1);
   border-radius: 6px;
 }
+.input-form input:nth-child(2):hover {
+  background: white;
+  color: #d9ab82;
+}
 
+.input-form input:nth-child(2):focus {
+  border-color: #d9ab82;
+  box-shadow: inset 0 1px 1px rgba(114, 114, 114, 0.075),
+    0 0 8px rgba(255, 165, 91, 0.6);
+}
 .form-video img {
   /* align-items: center; */
   margin-top: 4.5vh;
