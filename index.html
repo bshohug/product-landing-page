@@ -403,24 +403,6 @@
       integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
       crossorigin="anonymous"
     ></script>
-    <script>
-      $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 50) {
-          $('.navbar').addClass('shadow');
-        } else {
-          $('.navbar').removeClass('shadow');
-        }
-      });
-    </script>
-    <script>
-      const toggleSidebarBtn = document.getElementById('toggle-sidebar');
-      const sidebar = document.getElementById('sidebar');
-
-      toggleSidebarBtn.addEventListener('click', () => {
-        sidebar.classList.toggle('show');
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
