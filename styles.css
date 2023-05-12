@@ -177,6 +177,9 @@ h3 {
 .flex-home {
   flex-direction: row;
 }
+.title {
+  width: 100vw;
+}
 .title h1 {
   font-weight: 500;
   font-size: 8vh;
@@ -199,11 +202,15 @@ h3 {
 .btn2 {
   min-width: 150px;
 }
-
+.cover-img {
+  width: 100vw;
+}
 .cover-img img {
   mix-blend-mode: darken;
 }
-
+.btnnn {
+  width: 100vw;
+}
 .btnnn button {
   margin: 5px 30px;
   width: 20.2vh;
@@ -267,18 +274,21 @@ h3 {
 }
 
 /* Clients page  */
+.trusted-client {
+  width: 100vw;
+}
 
 .all-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vh;
+  width: 100vw;
 }
 .all-logo img {
   margin: 62px;
   padding: 5px;
-  width: 90px;
-  height: 40px;
+  width: 9vh;
+  height: 4vh;
 }
 
 .mid-con {
@@ -336,7 +346,7 @@ h3 {
 /* product page */
 
 .products-menu {
-  width: 140vh;
+  width: 100vw;
   margin: 10vh 0;
   display: flex;
   flex-wrap: wrap;
@@ -347,6 +357,19 @@ h3 {
 
 .categories {
   margin-bottom: 5vh;
+  width: 100vw;
+}
+
+.categories a {
+  padding: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.8vh;
+  line-height: 1.8vh;
+  color: #a9a7a6;
+}
+.categories a:nth-child(4) {
+  color: #3d3d3f;
 }
 
 .products-menu h3 {
@@ -388,22 +411,6 @@ h3 {
 
 .products-menu div:nth-child(3) {
   text-align: end;
-}
-
-.categories {
-  width: 60vh;
-}
-
-.categories a {
-  padding: 20px;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 1.8vh;
-  line-height: 1.8vh;
-  color: #a9a7a6;
-}
-.categories a:nth-child(4) {
-  color: #3d3d3f;
 }
 
 .product-container {
@@ -506,10 +513,9 @@ h3 {
 }
 .review-right {
   margin: 0 5vh;
-  padding: 9vh 0 0 9vh;
-
-  width: 60vh;
-  height: 70vh;
+  /* padding: 9vh 0 0 9vh; */
+  /* width: 100vw;
+  height: 70vh; */
 }
 .review-text h1 {
   width: 42.7vh;
@@ -604,7 +610,6 @@ h3 {
   width: 50%;
 }
 .form-video {
-  width: 44.5vh;
   height: 7.3vh;
   margin-left: 5vh;
 }
@@ -756,7 +761,6 @@ footer {
     font-size: 0.9rem;
   }
   .products-menu {
-    width: 80vh;
     margin: 0 0 10vh 0;
   }
 }
@@ -814,8 +818,8 @@ footer {
 
   .all-logo img {
     margin: 0 10px;
-    width: 70px;
-    height: 30px;
+    width: 7vh;
+    height: 3vh;
   }
 
   .mid-con {
@@ -847,8 +851,8 @@ footer {
   }
   .all-logo img {
     margin: 0 20px;
-    width: 80px;
-    height: 50px;
+    width: 8vh;
+    height: 5vh;
     padding-bottom: 20px;
   }
   .trusted-client h2 {
@@ -881,8 +885,8 @@ footer {
 
   .all-logo img {
     margin: 62px;
-    width: 90px;
-    height: 40px;
+    width: 9vh;
+    height: 4vh;
   }
 
   .mid-con {
