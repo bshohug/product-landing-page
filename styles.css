@@ -836,8 +836,7 @@ footer {
 
   .all-logo {
     width: 100%;
-    padding: 2vh;
-    margin: 0 0 2vh;
+    padding: 2vh 0;
   }
 
   .all-logo img {
@@ -895,14 +894,14 @@ footer {
 /* For screens larger than 992px */
 @media (min-width: 1000px) {
   .trusted-client {
-    margin-top: 100px;
+    margin-top: 10vh;
   }
   .trusted-client h2 {
-    padding: 20px;
+    padding: 2vh 0;
   }
   .all-logo {
     width: 100vw;
-    justify-content: space-center;
+    /* justify-content: space-center; */
     margin-bottom: 20px;
   }
 
