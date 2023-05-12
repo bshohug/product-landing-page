@@ -16,6 +16,10 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  mix-blend-mode: darken;
+}
+
 body {
   margin: 0;
   color: var(--on-background);
@@ -178,7 +182,6 @@ h3 {
 }
 .title {
   width: 50vw;
-  margin-left: 5vw;
 }
 .title h1 {
   font-weight: 500;
@@ -205,9 +208,7 @@ h3 {
 .cover-img {
   width: 100vw;
 }
-.cover-img img {
-  mix-blend-mode: darken;
-}
+
 .btnnn {
   width: 100vw;
 }
@@ -409,6 +410,7 @@ h3 {
 .product-container {
   width: 70%;
 }
+
 .product-card {
   background: #fff4e8;
   border-radius: 3px;
@@ -597,6 +599,7 @@ h3 {
 .form-right img {
   padding: 5vh 0 0;
   height: 45vh;
+  mix-blend-mode: darken;
 }
 
 .input-form {
@@ -618,6 +621,10 @@ h3 {
   line-height: 2vh;
   letter-spacing: -0.5px;
   color: #fe8432;
+}
+
+.form-left {
+  padding-top: 10vh;
 }
 .form-left h6 {
   margin: 0;
