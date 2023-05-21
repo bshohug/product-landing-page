@@ -1,16 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/geomanist');
 @import url('https://db.onlinewebfonts.com/c/0771d7a6020c21f5082380939e415ad1?family=Geomanist+Bold');
 
-:root {
-  --primary-color: #c4a586;
-  --text-color: rgba(255, 255, 255, 0.7);
-  --quote-box: rgb(250, 250, 250);
-  --on-background: rgb(66, 66, 66);
-  --on-background-alt: rgba(66, 66, 66, 0.7);
-  --background: #fbfbfb;
-  --card-color: rgba(139, 100, 100, 0.5);
-}
-
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -24,7 +14,7 @@ body {
   margin: 0;
   color: rgb(66, 66, 66);
   font-family: 'Geomanist', sans-serif;
-  background-color: var(--background);
+  background-color: #fbfbfb;
 }
 
 section {
